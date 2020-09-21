@@ -16,7 +16,7 @@
     height:5vh;
     border:none;
     background-color:transparent;
-    border-bottom:2px solid red;
+    border-bottom:2px solid #CF2A4A;
     appearance: none;
 }
 
@@ -24,4 +24,46 @@
 
 .hidden {
     display: none !important;
+}
+
+#date
+{
+    display: flex;
+    margin-left:5vw;
+    margin-top: 25vh;
+}
+
+input
+{
+    width:15vw;
+    height:5vh;
+    border:none;
+    background-color:transparent;
+    border-bottom:2px solid #CF2A4A;
+    appearance: none;
+    margin-left: 2vw;
+}
+
+.calendar
+{
+    width: 2vw;
+    margin-top: 1vh;
+}
+
+.calendarRetour
+{
+    width: 2vw;
+    margin-left: 5vw;
+    margin-top: 1vh;
+}
+
+#tourist
+{
+    width: 2vw;
+    margin-top: 1vh;
+}
+
+#participant
+{
+    margin-top: 35vh;
 }

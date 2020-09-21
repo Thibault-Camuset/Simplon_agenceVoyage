@@ -16,7 +16,7 @@
     <div id="page-container">
 
         <select id="country-list">
-            <option selected>- départ</option>
+            <option selected>Départ de...</option>
             <option>France - Lyon - Satolas</option>
             <option>France - Paris - Charles De Gaulle</option>
             <option>France - Marseille</option>
@@ -45,7 +45,18 @@
             <option>Allemagne - Dortmund</option>
         </select>
 
+        <div id="date">
+            <div> <img class="calendar" src="img/calendar.svg" /></div>
+            <div><input type="date" /></div>
+            <div> <img class="calendarRetour" src="img/calendar.svg" /></div>
+            <div><input type="date" /></div>
+        </div>
+
+        <div id="participant">
+            <img id="tourist" src="img/tourist.svg"/><input type="text" name="adulte" placeholder="1 adulte" />  <input type="text" name="enfant" placeholder="0 enfant" />
+        </div>
     </div>
+
 </body>
 
 </html>
