@@ -4,10 +4,14 @@
 }
 
 body {
-    background-color:#eceef7;
+    
+    background-image: url('../img/fond.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#page-container {
+#page-container, #page2-container {
     
     display: flex;
     flex-direction: column;
@@ -66,6 +70,7 @@ input
 .calendarRetour
 {
     width: 2vw;
+
 
 }
 
