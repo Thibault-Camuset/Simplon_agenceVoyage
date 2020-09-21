@@ -1,0 +1,25 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#country-list {
+    position: fixed;
+    top:10vh;
+    left:5vw;
+    width:15vw;
+    height:40vh;
+}
+
+
+
+
+
+.hidden {
+    display: none !important;
+}
