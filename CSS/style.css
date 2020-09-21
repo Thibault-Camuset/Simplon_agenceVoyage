@@ -13,10 +13,12 @@
     top:10vh;
     left:5vw;
     width:15vw;
-    height:40vh;
+    height:5vh;
+    border:none;
+    background-color:transparent;
+    border-bottom:2px solid red;
+    appearance: none;
 }
-
-
 
 
 
