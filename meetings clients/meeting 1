@@ -1,0 +1,50 @@
+Projet Agence de Voyage.
+reservation en ligne aeroports
+pas de destination predefinies, mais europeens, reste facultatif
+
+ideal API aeroports
+
+> Formulaire?
+
+ - Select pays?
+ - Selection personnes?
+ - Selection Date?
+  
+  
+  
+> PHP, méthode POST?
+
+> 
+
+
+
+finalité > choix pays > choix ville > aeroports liés
+date de depart, date de retour
+(pas partir dans le passé, pas revenir avant d'etre parti)
+
+>>> plusieurs étapes
+
+1 voyage + nombre participants
+2 liste de tous les participants (personne qui commande + accompagnateurs, enfants ou pas, date naissance enfants)
+
+affichage météo pays d'arrivée
+choisir ton siège pour 5e de plus 
+options repas, classe de voyage (sieges differents)
+
+privilégier la fonctionalité
+
+mail de confirmation envoie formulaire optionnel
+
+Agence Simplon Air Line
+
+chatbot > guider les gens (covid)
+
+1. Grosse priorité reservation > ville de depart et arrivée, date, retour, et entrer des participants.
+
+2. > selection aeroport
+
+3. 	>> reste
+
+
+
+

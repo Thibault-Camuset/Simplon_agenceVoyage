@@ -6,43 +6,61 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>SimpAirline</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/style.css'>
     <script src='main.js'></script>
 </head>
 
 <body>
 
-   
-    <form method="post" action="">
-            <label for="pays"> Pays</label><br />
-            <select name="pays" id="pays">
-                <option value="france">France</option>
-                <option value="espagne">Espagne</option>
-                <option value="italie">Italie</option>
-                <option value="royaume-uni">Royaume-Uni</option>
-                <option value="portugal">Portugal</option>
-               <option value="allemagne">Allemagne</option>
-            </select>
-    
-    
+
+    <div id="page-container">
+
+        <div id="country-list">
+            <div>France</div>
+            <div>Espagne</div>
+            <div>Italie</div>
+            <div>Royaume-Uni</div>
+            <div>Portugal</div>
+            <div>Allemagne</div>
+        </div>
 
 
-<label for="villes">Villes</label><br />
-<select name="villes" id="villes">
-    <option value="madrid">Madrid</option>
-    <option value="barcelone">Barcelone</option>
-    <option value="paris">Paris</option>
-    <option value="marseille">Marseille</option>
-    <option value="berlin">Berlin</option>
-    <option value="munich">Munich</option>
-    <option value="londres">Londres</option>
-    <option value="belfast">Belfast</option>
-    <option value="rome">Rome</option>
-    <option value="venise">Venise</option>
-    <option value="lisbonne">Lisbonne</option>
-    <option value="porto">Porto</option>
-</select>
-</form>
+
+
+        <div id="city-list">
+
+            <div id="spain-city-list" class="hidden">
+                <div>Madrid</div>
+                <div>Barcelone</div>
+            </div>
+
+            <div id="france-city-list" class="hidden">
+                <div>Paris</div>
+                <div>Marseille</div>
+            </div>
+
+            <div id="germany-city-list" class="hidden">
+                <div>Berlin</div>
+                <div>Munich</div>
+            </div>
+
+            <div id="unitedKingdom-city-list" class="hidden">
+                <div>Londres</div>
+                <div>Belfast</div>
+            </div>
+
+            <div id="italy-city-list" class="hidden">
+                <div>Rome</div>
+                <div>Venise</div>
+            </div>
+
+            <div id="portugal-city-list" class="hidden">
+                <div>Lisbonne</div>
+                <div>Porto</div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
