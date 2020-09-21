@@ -3,25 +3,102 @@
     margin:0;
 }
 
-#page-container {
-    display: flex;
-    flex-direction: row;
+body {
+    background-color:#eceef7;
 }
 
-#country-list {
+#page-container {
+    
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    top:10vh;
-    left:5vw;
+    top:5vh;
+    left:10vw;
+}
+
+#depart-list, #arrival-list {
+
+    
+    width:33vw;
+    height:5vh;
+    border:none;
+    background-color:transparent;
+    border-bottom:2px solid #ce2f4d;
+    appearance: none;   
+}
+
+#logo {
+    margin-bottom:5vh;
+    width: 25vw;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#date
+{
+    display: flex;
+    margin-bottom:5vh;
+
+}
+
+input
+{
     width:15vw;
     height:5vh;
     border:none;
     background-color:transparent;
-    border-bottom:2px solid red;
+    border-bottom:2px solid #ce2f4d;
     appearance: none;
+    margin-left: 2vw;
 }
 
+.calendar
+{
+    width: 2vw;
+    margin-top: 1vh;
+}
 
+.calendarRetour
+{
+    width: 2vw;
 
-.hidden {
-    display: none !important;
+}
+
+#tourist
+{
+    width: 2vw;
+
+}
+
+ #avion1, #avion2{
+    width: 3vw;
+    height: 3vw;
+    margin-right:2vw;
+}
+
+#input1 ,#input2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
+#input-adulte, #input-enfant {
+    width:8vw;
+}
+
+#search-button {
+    margin-top:10vh;
+    width:25vw;
+    height:8vh;
+    margin-left:auto;
+    margin-right:auto;
+    border:none;
+    background-color:white;
+    color:#ce2f4d;
+    font-size:28px;
 }
