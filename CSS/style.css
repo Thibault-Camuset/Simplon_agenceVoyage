@@ -96,7 +96,7 @@ body {
     width:8vw;
 }
 
-#search-button {
+#search-button, #valid-button {
     margin-top:10vh;
     width:25vw;
     height:8vh;
@@ -135,3 +135,5 @@ h3 {
     margin-top: 5vh;
     margin-bottom:5vh;
 }
+
+
