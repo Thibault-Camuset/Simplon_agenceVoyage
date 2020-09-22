@@ -107,3 +107,6 @@ body {
     color:#ce2f4d;
     font-size:28px;
 }
+#participantEnfant, #adult{
+    margin-top: 10vh;
+};
