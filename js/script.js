@@ -42,6 +42,8 @@ function createAdultElement(){
         AdultButton.type='radio';
         
 
+        
+
         AdultName.classList.add('input','inputNameAdult');
         AdultFirstName.classList.add('input','inputFirstNameAdult');
         AdultButton.name='dirigeant';
@@ -93,25 +95,27 @@ function loadJSON() {
 
     var xobj = new XMLHttpRequest();
     // xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'js/airports.json', true);
+    xobj.open('GET', 'js/european_iatas_df1.json', true);
     xobj.onreadystatechange = function() {
         if (xobj.readyState == 4 && xobj.status == "200") {
 
             // .open will NOT return a value but simply returns undefined in async mode so use a callback
-            // callback(xobj.responseText);
+            //callback(xobj.responseText);
             
             json = JSON.parse(xobj.responseText);
             
         }
-    }
-    airportsList();
+        }
+        
+       
+    //airportsList();
     // xobj.send(null);
 
 }
-    console.log(json);
-    loadJSON();
     
-    function airportsList(){
+    loadJSON();
+    console.log(json); 
+    /*function airportsList(){
        
     
       for (x=0; x<json.length;x++){
@@ -121,4 +125,4 @@ function loadJSON() {
       }
       console.log(airportsEurope);
     }
-      
+      */

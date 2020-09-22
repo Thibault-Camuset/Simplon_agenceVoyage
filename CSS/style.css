@@ -127,7 +127,7 @@ body {
 }
 
 .inputEnfantAge {
-    width:7vw;
+    width:9vw;
 }
 
 
@@ -145,4 +145,16 @@ h3 {
 .radio-button {
     position:relative;
     top:1vh;
+}
+
+#responsable {
+    color: #CF2A4A;
+    margin-left: 24vw;
+    font-size: 12px;
+   
+}
+#birthday {
+    color: #CF2A4A;
+    margin-left: 26vw;
+    font-size: 12px;
 }
