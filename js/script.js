@@ -9,6 +9,7 @@ let enfant = document.getElementById('input-enfant');
 let enfantParticipant = document.getElementById('participantEnfant');
 let enfantValue;
 
+loadJSON();
 let json=[];
 let airportsEurope=[];
 
@@ -41,7 +42,6 @@ function createAdultElement(){
         AdultFirstName.placeholder='Prénom'
         AdultButton.type='radio';
         
-
         
 
         AdultName.classList.add('input','inputNameAdult');
@@ -95,25 +95,24 @@ function loadJSON() {
 
     var xobj = new XMLHttpRequest();
     // xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'js/european_iatas_df1.json', true);
     xobj.onreadystatechange = function() {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-
+        if (this.readyState == 4 && this.status == "200") {
+            
             // .open will NOT return a value but simply returns undefined in async mode so use a callback
             //callback(xobj.responseText);
             
-            json = JSON.parse(xobj.responseText);
+            json = JSON.parse(this.responseText);
             
         }
-        }
+    }
+    xobj.open('GET', 'js/european_iatas_df1.json', true);
         
        
     //airportsList();
-    // xobj.send(null);
+     xobj.send();
 
 }
     
-    loadJSON();
     console.log(json); 
     /*function airportsList(){
        
