@@ -27,7 +27,7 @@ body {
     height:5vh;
     border:none;
     background-color:transparent;
-    border-bottom:2px solid #ce2f4d;
+    border-bottom:2px solid #CF2A4A;
     appearance: none;   
 }
 
@@ -56,7 +56,7 @@ body {
     height:5vh;
     border:none;
     background-color:transparent;
-    border-bottom:2px solid #ce2f4d;
+    border-bottom:2px solid #CF2A4A;
     appearance: none;
     margin-left: 2vw;
 }
@@ -104,13 +104,36 @@ body {
     margin-right:auto;
     border:none;
     background-color:white;
-    color:#ce2f4d;
-    font-size:28px;
-}
-#participantEnfant, #adult{
-    margin-top: 10vh;
+    color:#CF2A4A;
+    font-size:4vh;
 }
 
-h3{
-    color: #ce2f4d;
+.inputNameAdult, .inputFirstNameAdult {
+    width:10vw;
 }
+
+.inputFirstNameAdult {
+    margin-right:2vw;
+}
+
+.inputEnfantName, .inputFirstName {
+    width: 10vw;
+}
+
+.inputEnfantAge {
+    width:7vw;
+}
+
+
+h3 {
+    color:#CF2A4A;
+    text-align:center;   
+    font-size:4vh; 
+}
+
+#adult {
+    margin-top: 5vh;
+    margin-bottom:5vh;
+}
+
+
