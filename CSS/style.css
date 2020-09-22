@@ -60,6 +60,9 @@ body {
     appearance: none;
     margin-left: 2vw;
 }
+.inputDate{
+    width: 14vw;
+}
 
 .calendar
 {
@@ -70,6 +73,9 @@ body {
 .calendarRetour
 {
     width: 2vw;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-right: -0.5vw;
 
 
 }
