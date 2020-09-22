@@ -42,6 +42,7 @@ function createAdultElement(){
         AdultName.classList.add('input','inputNameAdult');
         AdultFirstName.classList.add('input','inputFirstNameAdult');
         AdultButton.name='dirigeant';
+        AdultButton.classList.add('radio-button');
         newAdult.appendChild(AdultName);
         newAdult.appendChild(AdultFirstName);
         newAdult.appendChild(AdultButton);
