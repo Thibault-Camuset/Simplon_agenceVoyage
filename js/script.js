@@ -9,6 +9,9 @@ let enfant = document.getElementById('input-enfant');
 let enfantParticipant = document.getElementById('participantEnfant');
 let enfantValue;
 
+let json=[];
+let airportsEurope=[];
+
 
 
 button.addEventListener('click', ()=>{
@@ -50,6 +53,8 @@ function createAdultElement(){
         
     }
 }
+
+
     
 
 
@@ -82,3 +87,38 @@ function createEnfantElement (){
     }
 }
 
+
+
+function loadJSON() {
+
+    var xobj = new XMLHttpRequest();
+    // xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'js/airports.json', true);
+    xobj.onreadystatechange = function() {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+
+            // .open will NOT return a value but simply returns undefined in async mode so use a callback
+            // callback(xobj.responseText);
+            
+            json = JSON.parse(xobj.responseText);
+            
+        }
+    }
+    airportsList();
+    // xobj.send(null);
+
+}
+    console.log(json);
+    loadJSON();
+    
+    function airportsList(){
+       
+    
+      for (x=0; x<json.length;x++){
+          if(json[x].continent=='EU'){
+              airportsEurope.push(json[x]);
+          }
+      }
+      console.log(airportsEurope);
+    }
+      
