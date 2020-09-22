@@ -109,4 +109,8 @@ body {
 }
 #participantEnfant, #adult{
     margin-top: 10vh;
-};
+}
+
+h3{
+    color: #ce2f4d;
+}
