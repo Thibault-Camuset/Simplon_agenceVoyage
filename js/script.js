@@ -11,6 +11,7 @@ let enfantValue;
 
 let json=[];
 let airportsEurope=[];
+let arrayAirportsList;
 
 
 
@@ -89,36 +90,73 @@ function createEnfantElement (){
 
 
 
-function loadJSON() {
 
-    var xobj = new XMLHttpRequest();
-    // xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'js/airports.json', true);
-    xobj.onreadystatechange = function() {
-        if (xobj.readyState == 4 && xobj.status == "200") {
 
-            // .open will NOT return a value but simply returns undefined in async mode so use a callback
-            // callback(xobj.responseText);
+// function loadJSON () {
+//     let request = new XMLHttpRequest();
+//     request.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
             
-            json = JSON.parse(xobj.responseText);
-            
+//             json = JSON.parse(this.responseText);
+
+//             airportsList();
+//         }  
+//     }
+//     request.open("GET", "../js/airports.json", true);
+//     request.send();
+// }
+
+
+
+loadAirportsList();
+
+function loadAirportsList() {
+
+    let request = new XMLHttpRequest();
+
+    request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            showAirportsList(JSON.parse(this.responseText));
+            arrayAirportsList.push(JSON.parse(this.responseText));
         }
     }
-    airportsList();
-    // xobj.send(null);
-
+    request.open("GET", "https://api.duffel.com/air/airports", true);
+    request.send();
 }
-    console.log(json);
-    loadJSON();
+
+function showAirportsList(airports) {
+    console.log('full airports array');
+    console.log(airports);
+    airports.data.forEach(airport => {
+        console.log('airport element');
+        console.log(airport);
+        if(airport.time_zone.toLowerCase().includes('europe')) {
+            airportsEurope.push(airport);
+        }
+    })
+}
+console.log('europe airports array');
+console.log(airportsEurope);
+
+
+
+
+
+
+
+
+    // console.log(json);
     
-    function airportsList(){
+    
+    // function airportsList(){
        
     
-      for (x=0; x<json.length;x++){
-          if(json[x].continent=='EU'){
-              airportsEurope.push(json[x]);
-          }
-      }
-      console.log(airportsEurope);
-    }
+    //   for (x=0; x<json.length;x++){
+    //       if(json[x].continent=='EU'){
+    //           airportsEurope.push(json[x]);
+    //       }
+    //   }
+    //   console.log(airportsEurope);
+    // }
       
+    // loadJSON();
