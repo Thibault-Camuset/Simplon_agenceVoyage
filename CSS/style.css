@@ -60,6 +60,9 @@ body {
     appearance: none;
     margin-left: 2vw;
 }
+.inputDate{
+    width: 14vw;
+}
 
 .calendar
 {
@@ -70,6 +73,9 @@ body {
 .calendarRetour
 {
     width: 2vw;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-right: -0.5vw;
 
 
 }
@@ -121,7 +127,7 @@ body {
 }
 
 .inputEnfantAge {
-    width:7vw;
+    width:9vw;
 }
 
 
@@ -139,4 +145,16 @@ h3 {
 .radio-button {
     position:relative;
     top:1vh;
+}
+
+#responsable {
+    color: #CF2A4A;
+    margin-left: 24vw;
+    font-size: 12px;
+   
+}
+#birthday {
+    color: #CF2A4A;
+    margin-left: 26vw;
+    font-size: 12px;
 }
